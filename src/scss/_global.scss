@@ -9,7 +9,7 @@ hr {
     max-width: 100px;
     margin: 25px auto 0;
     border-width: 1px;
-    border-color: fade-out($gray-900, .9);
+    border-color: fade-out($gray-900, 0.9);
 }
 
 hr.light {

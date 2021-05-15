@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - New Age v5.1.0 (https://startbootstrap.com/theme/new-age)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
+* Start Bootstrap - Border-Pass v1.0.0 (undefined)
+* Copyright 2013-2021 BITS Marcin Bojar
+* Licensed under undefined (https://github.com/StartBootstrap/undefined/blob/master/LICENSE)
 */
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10129,11 +10129,6 @@ section h2 {
   max-width: 300px;
   width: 100%;
 }
-@media only screen and (max-width: 991px) {
-  .device-wrapper {
-    margin: 0 auto;
-  }
-}
 
 .device {
   position: relative;
@@ -10168,6 +10163,14 @@ section h2 {
   left: 43.30645%;
   width: 13.3871%;
   height: 6.64532%;
+}
+
+.btn-brand {
+  color: #140b36;
+}
+.btn-brand:hover {
+  color: white;
+  background-color: transparent;
 }
 
 section.contact {
@@ -10214,7 +10217,7 @@ section.contact ul.list-social li.social-google-plus a:hover {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../assets/img/bg-cta.jpg");
+  background-image: url("../assets/img/road.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -10224,7 +10227,6 @@ section.cta .cta-content {
 }
 section.cta .cta-content h2 {
   font-size: 50px;
-  max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
   color: white;
@@ -10250,6 +10252,10 @@ section.download {
 section.download h2 {
   font-size: 50px;
   margin-top: 0;
+}
+section.download .alert-link,
+section.download .alert-link:visited {
+  color: black;
 }
 section.download .badges .badge-link {
   display: block;

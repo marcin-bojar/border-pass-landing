@@ -1,7 +1,7 @@
 /*!
-* Start Bootstrap - New Age v5.1.0 (https://startbootstrap.com/theme/new-age)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
+* Start Bootstrap - Border-Pass v1.0.0 (undefined)
+* Copyright 2013-2021 BITS Marcin Bojar
+* Licensed under undefined (https://github.com/StartBootstrap/undefined/blob/master/LICENSE)
 */
 (function ($) {
     "use strict"; // Start of use strict

@@ -8,6 +8,11 @@ section.download {
         margin-top: 0;
     }
 
+    .alert-link,
+    .alert-link:visited {
+        color: black;
+    }
+
     .badges {
         .badge-link {
             display: block;
@@ -21,14 +26,14 @@ section.download {
                 height: 60px;
             }
 
-            @media(min-width: 768px) {
+            @media (min-width: 768px) {
                 display: inline-block;
                 margin-bottom: 0;
             }
         }
     }
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
         h2 {
             font-size: 70px;
         }

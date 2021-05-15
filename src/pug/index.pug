@@ -41,7 +41,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#download') Zainstaluj
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#features') Funkcje
+                            a.nav-link.js-scroll-trigger(href='#features') Korzyści
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Kontakt
 
@@ -51,10 +51,12 @@ html(lang='en')
                     .col-lg-7.my-auto
                         .header-content.mx-auto
                             h1.mb-5
-                                | Border-Pass <br> Rejestruj swoje podróże służbowe. Wysyłaj gotowe zestawienia do firmy wprost z telefonu. Proste!
-                            a.btn.btn-outline-light.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://border-pass.herokuapp.com') Zacznij używać
+                                | Border-Pass 
+                                br
+                                | Rejestruj swoje podróże służbowe. Wysyłaj gotowe zestawienia do firmy wprost z telefonu. Proste!
+                            a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://border-pass.herokuapp.com') Zacznij używać
                     .col-lg-5.my-auto
-                        .device-wrapper
+                        .device-wrapper.mx-auto
                             .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
                                 .screen
                                     // PUT CONTENTS HERE
@@ -65,7 +67,7 @@ html(lang='en')
                 .row
                     .col-md-8.mx-auto
                         h2.section-heading Zainstaluj Border-Pass na swoim urządzeniu!
-                        p Po wejściu na stronę border-pass.pl możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą! 
+                        p Po wejściu na stronę#[a.alert-link(href='https://border-pass.herokuapp.com') https://border-pass.herokuapp.com]  możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą! 
                         .badges
                             a.badge-link(href='#!')
                                 img(src='assets/img/google-play-badge.svg', alt='...')
@@ -75,52 +77,50 @@ html(lang='en')
         section#features.features
             .container
                 .section-heading.text-center
-                    h2 Unlimited Features, Unlimited Fun
-                    p.text-muted Check out what you can do with this app theme!
+                    h2 Co oferuje Border-Pass
+                    p.text-muted Sprawdź, co zyskujesz używając naszej aplikacji
                     hr
                 .row
                     .col-lg-4.my-auto
-                        .device-wrapper
+                        .device-wrapper.mx-auto.mb-5
                             .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
                                 .screen
                                     // PUT CONTENTS HERE
                                     img.img-fluid(src='assets/img/demo-screen-1.jpg', alt='...')
-                                .button
-                                    // You can hook the "home button" to some JavaScript events or just remove it
-
+                                
                     .col-lg-8.my-auto
                         .container-fluid
                             .row
                                 .col-lg-6
                                     .feature-item
                                         i.icon-screen-smartphone
-                                        h3 Device Mockups
-                                        p.text-muted Ready to use HTML/CSS device mockups, no Photoshop required!
+                                        h3 Zawsze pod ręką
+                                        p.text-muted Instalujesz na swoim urządzeniu, używasz gdzie chcesz, szybko i wygodnie.
                                 .col-lg-6
                                     .feature-item
-                                        i.icon-camera
-                                        h3 Flexible Use
-                                        p.text-muted Put an image, video, animation, or anything else in the screen!
+                                        i.icon-envelope
+                                        h3 Wysyłaj zestawienia
+                                        p.text-muted Kilka kliknięć i Twoje zestawienie ląduje na mailu w Twojej firmie. Nieważne gdzie akurat się znajdujesz.
                             .row
                                 .col-lg-6
                                     .feature-item
                                         i.icon-present
-                                        h3 Free to Use
-                                        p.text-muted As always, this theme is free to download and use for any purpose!
+                                        h3 Całkowicie za darmo
+                                        p.text-muted Wystarczy wejść na stronę, żeby zacząć używać. To nic nie kosztuje.
                                 .col-lg-6
                                     .feature-item
-                                        i.icon-lock-open
-                                        h3 Open Source
-                                        p.text-muted Since this theme is MIT licensed, you can use it commercially!
+                                        i.icon-lock
+                                        h3 Bezpieczeństwo
+                                        p.text-muted Twoje dane są bezpiecznie przechowywane w naszej bazie danych. 
 
         section.cta
             .cta-content
                 .container
                     h2
-                        | Stop waiting.
+                        | No to w drogę.
                         br
-                        | Start building.
-                    a.btn.btn-outline-light.py-3.px-4.rounded-pill.js-scroll-trigger(href='#contact') Let's Get Started!
+                        | Szerokości!
+                    a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://border-pass.herokuapp.com') Zacznij używać
             .overlay
 
         section#contact.contact.bg-primary
