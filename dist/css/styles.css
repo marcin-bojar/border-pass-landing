@@ -2401,7 +2401,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   color: #212529;
   text-align: center;
@@ -10038,6 +10038,12 @@ section h2 {
   font-size: 50px;
 }
 
+.alert-link,
+.alert-link:visited,
+.alert-link:hover {
+  color: #212529;
+}
+
 #mainNav {
   border-color: rgba(33, 37, 41, 0.05);
   background-color: transparent;
@@ -10076,7 +10082,7 @@ section h2 {
   border: 1px solid white;
 }
 #mainNav .navbar-nav > li > a {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-nav > li > a.active {
   color: #fdcc52 !important;
@@ -10164,41 +10170,14 @@ section.contact {
   text-align: center;
 }
 section.contact h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin-top: 75px;
+  margin-bottom: 0;
 }
 section.contact h2 i {
   color: #dd4b39;
 }
-section.contact ul.list-social {
-  margin-bottom: 0;
-}
-section.contact ul.list-social li a {
-  font-size: 40px;
-  line-height: 80px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  color: white;
-  border-radius: 100%;
-}
-section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
-}
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
-}
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
-}
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
-}
-section.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
-}
-section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
+section.contact .contact-text {
+  font-size: 24px;
 }
 
 section.cta {
@@ -10234,15 +10213,10 @@ section.cta .overlay {
 
 section.download {
   position: relative;
-  padding: 150px 0;
 }
 section.download h2 {
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 0;
-}
-section.download .alert-link,
-section.download .alert-link:visited {
-  color: black;
 }
 section.download .badges .badge-link {
   display: block;
@@ -10260,7 +10234,20 @@ section.download .badges .badge-link img {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  section.download h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  section.download {
+    padding: 150px 0;
+  }
+  section.download h2 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px) {
   section.download h2 {
     font-size: 70px;
   }
@@ -10315,16 +10302,6 @@ footer {
 footer p {
   font-size: 12px;
   margin: 0;
-}
-footer ul {
-  margin-bottom: 0;
-}
-footer ul li a {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.3);
-}
-footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
-  text-decoration: none;
 }
 
 header.masthead {

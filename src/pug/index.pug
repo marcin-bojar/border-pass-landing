@@ -17,8 +17,7 @@ html(lang='en')
         link(href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css', rel='stylesheet')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Catamaran:200,400', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
 
         // Plugin CSS
@@ -66,7 +65,7 @@ html(lang='en')
             .container
                 .row
                     .col-md-8.mx-auto
-                        h2.section-heading Zainstaluj Border-Pass na swoim urządzeniu!
+                        h2.section-heading.mb-5 Zainstaluj Border-Pass na swoim urządzeniu!
                         p Po wejściu na stronę#[a.alert-link(href='https://border-pass.herokuapp.com') https://border-pass.herokuapp.com]  możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą! 
                         .badges
                             a.badge-link(href='#!')
@@ -125,31 +124,18 @@ html(lang='en')
 
         section#contact.contact.bg-primary
             .container
+                p.font-weight-bold.contact-text.mb-1 Masz jakiekolwiek pytania?
+                p.font-weight-bold.contact-text.mb-1 Znalazłeś jakiś błąd?
+                p.font-weight-bold.contact-text.mb-5 Masz pomysł na udoskonalenie naszej apki?
+                p.contact-text Koniecznie do nas napisz na#[a.alert-link(href='mailto:border.pass.kontakt@gmail.com') border.pass.kontakt@gmail.com] Odpowiemy na każdą wiadomość.
                 h2
-                    | We
+                    | Made with
                     i.text-danger.fas.fa-heart
-                    | new friends!
-                ul.list-inline.list-social
-                    li.list-inline-item.social-twitter
-                        a(href='#!')
-                            i.fab.fa-twitter
-                    li.list-inline-item.social-facebook
-                        a(href='#!')
-                            i.fab.fa-facebook-f
-                    li.list-inline-item.social-google-plus
-                        a(href='#!')
-                            i.fab.fa-google-plus-g
+                    | in Poland.
 
         footer
             .container
-                p &copy; Your Website 2021. All Rights Reserved.
-                ul.list-inline
-                    li.list-inline-item
-                        a(href='#!') Privacy
-                    li.list-inline-item
-                        a(href='#!') Terms
-                    li.list-inline-item
-                        a(href='#!') FAQ
+                p &copy; BITS Marcin Bojar 2021. Wszelkie prawa zastrzeżone.
 
         // Bootstrap core JS
         script(src='https://code.jquery.com/jquery-3.5.1.min.js')
