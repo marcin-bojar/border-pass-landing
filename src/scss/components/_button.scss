@@ -1,8 +1,13 @@
 .btn-brand {
     color: $btn-text;
+    font-size: 1rem;
 
     &:hover {
         color: white;
         background-color: transparent;
+    }
+
+    @media (min-width: 576px) {
+        font-size: 1.25rem;
     }
 }

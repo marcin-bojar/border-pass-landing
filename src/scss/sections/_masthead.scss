@@ -7,9 +7,11 @@ header.masthead {
     padding-bottom: 100px;
 
     color: white;
-    background: url('../assets/img/bg-pattern.png'), $secondary;
-    background: url('../assets/img/bg-pattern.png'), -webkit-linear-gradient(to left, $secondary, $tertiary);
-    background: url('../assets/img/bg-pattern.png'), linear-gradient(to left, $secondary, $tertiary);
+    background: url("../assets/img/bg-pattern.png"), $secondary;
+    background: url("../assets/img/bg-pattern.png"),
+        -webkit-linear-gradient(to right, $color-hero-1, $color-hero-2);
+    background: url("../assets/img/bg-pattern.png"),
+        linear-gradient(to right, $color-hero-1, $color-hero-2);
 
     .header-content {
         max-width: 500px;
@@ -19,6 +21,12 @@ header.masthead {
 
         h1 {
             font-size: 30px;
+        }
+
+        @media (min-width: 576px) {
+            h1 {
+                font-size: 40px;
+            }
         }
     }
 

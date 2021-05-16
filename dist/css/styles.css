@@ -10082,7 +10082,7 @@ section h2 {
   #mainNav .navbar-brand {
     color: fade(white, 70%);
   }
-  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  #mainNav .navbar-brand:hover {
     color: white;
   }
   #mainNav .navbar-nav > li > a,
@@ -10100,7 +10100,7 @@ section h2 {
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
   }
-  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+  #mainNav.navbar-shrink .navbar-brand:hover {
     color: #fdcc52;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
@@ -10167,10 +10167,16 @@ section h2 {
 
 .btn-brand {
   color: #140b36;
+  font-size: 1rem;
 }
 .btn-brand:hover {
   color: white;
   background-color: transparent;
+}
+@media (min-width: 576px) {
+  .btn-brand {
+    font-size: 1.25rem;
+  }
 }
 
 section.contact {
@@ -10347,7 +10353,7 @@ header.masthead {
   padding-bottom: 100px;
   color: white;
   background: url("../assets/img/bg-pattern.png"), #7b4397;
-  background: url("../assets/img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  background: url("../assets/img/bg-pattern.png"), linear-gradient(to right, #992569, #2f1a99);
 }
 header.masthead .header-content {
   max-width: 500px;
@@ -10356,6 +10362,11 @@ header.masthead .header-content {
 }
 header.masthead .header-content h1 {
   font-size: 30px;
+}
+@media (min-width: 576px) {
+  header.masthead .header-content h1 {
+    font-size: 40px;
+  }
 }
 header.masthead .device-container {
   max-width: 325px;
