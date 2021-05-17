@@ -8,22 +8,46 @@ section.download {
     }
 
     .badges {
-        .badge-link {
-            display: block;
-            margin-bottom: 25px;
+        .badge-button {
+            color: $color-hero-1;
+            background-color: transparent;
+            border: none;
+            outline: none;
 
             &:last-child {
                 margin-bottom: 0;
             }
 
-            img {
+            svg {
                 height: 60px;
+                width: 60px;
+            }
+
+            p {
+                margin: 0;
             }
 
             @media (min-width: 768px) {
                 display: inline-block;
                 margin-bottom: 0;
             }
+        }
+    }
+
+    .instructions {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        transition: max-height 0.3s, opacity 0.3s;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            max-height: 1000px;
+        }
+
+        & .device-wrapper {
+            max-width: 250px;
         }
     }
 

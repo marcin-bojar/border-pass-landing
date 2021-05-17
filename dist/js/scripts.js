@@ -1,8 +1,8 @@
 /*!
- * Start Bootstrap - Border-Pass v1.0.0 (undefined)
- * Copyright 2013-2021 BITS Marcin Bojar
- * Licensed under undefined (https://github.com/StartBootstrap/undefined/blob/master/LICENSE)
- */
+* Start Bootstrap - Border-Pass v1.0.0 (undefined)
+* Copyright 2013-2021 BITS Marcin Bojar
+* Licensed under undefined (https://github.com/StartBootstrap/undefined/blob/master/LICENSE)
+*/
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -46,7 +46,6 @@
     // Collapse Navbar
     var navbarCollapse = function () {
         var isMenuOpen = $("#navbarResponsive").hasClass("show");
-
         if ($("#mainNav").offset().top > 100 || isMenuOpen) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
@@ -67,6 +66,16 @@
                 setTimeout(function () {
                     $(".navbar.navbar-expand-lg").removeClass("navbar-shrink");
                 }, 245);
+        }
+    });
+
+    $(".badge-button").on("click", function () {
+        if (this.id === "android") {
+            $(".instructions#ios").removeClass("show");
+            $(".instructions#android").toggleClass("show");
+        } else if (this.id === "ios") {
+            $(".instructions#android").removeClass("show");
+            $(".instructions#ios").toggleClass("show");
         }
     });
 })(jQuery); // End of use strict

@@ -72,9 +72,40 @@
                             <a class="alert-link" href="https://border-pass.herokuapp.com">https://border-pass.herokuapp.com</a>
                             możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą!
                         </p>
-                        <div class="badges">
-                            <a class="badge-link" href="#!"><img src="assets/img/google-play-badge.svg" alt="..." /></a>
-                            <a class="badge-link" href="#!"><img src="assets/img/app-store-badge.svg" alt="..." /></a>
+                        <p>Pokażemy Ci jak to zrobić. Jakie masz urządzenie?</p>
+                        <div class="badges col-8 mx-auto mb-5 d-flex align-items-center justify-content-around">
+                            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+                                <button class="badge-button" id="android" type="button">
+                                    <i class="fab fa-android"></i>
+                                    <p>Android</p>
+                                </button>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+                                <button class="badge-button" id="ios" type="button">
+                                    <i class="fab fa-apple"></i>
+                                    <p>iOS</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="instructions" id="android">
+                            <div class="device-wrapper mx-auto">
+                                <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="black">
+                                    <div class="screen">
+                                        <!-- PUT CONTENTS HERE-->
+                                        <video class="img-fluid" id="demoVideo" src="../assets/img/fGSyYUyNiG.mp4" autoplay muted loop></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructions" id="ios">
+                            <div class="device-wrapper mx-auto">
+                                <div class="device" data-device="iPhone6" data-orientation="portrait" data-color="white">
+                                    <div class="screen">
+                                        <!-- PUT CONTENTS HERE-->
+                                        <video class="img-fluid" id="demoVideo" src="../assets/img/fGSyYUyNiG.mp4" autoplay muted loop></video>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,19 +119,9 @@
                     <hr />
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 my-auto">
-                        <div class="device-wrapper mx-auto mb-5">
-                            <div class="device" data-device="iPhone6" data-orientation="portrait" data-color="white">
-                                <div class="screen">
-                                    <!-- PUT CONTENTS HERE-->
-                                    <img class="img-fluid" src="assets/img/demo-screen-1.jpg" alt="..." />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 my-auto">
-                        <div class="container-fluid">
-                            <div class="row">
+                    <div class="col-lg-12 my-auto">
+                        <div class="container">
+                            <div class="row mx-auto">
                                 <div class="col-lg-6">
                                     <div class="feature-item">
                                         <i class="icon-screen-smartphone"></i>

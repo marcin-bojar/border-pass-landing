@@ -40,6 +40,10 @@ header.masthead {
         }
     }
 
+    .device-wrapper {
+        max-width: 275px;
+    }
+
     @media (min-width: 992px) {
         height: 100vh;
         min-height: 775px;
@@ -56,8 +60,8 @@ header.masthead {
             }
         }
 
-        .device-container {
-            max-width: 325px;
+        .device-wrapper {
+            max-width: 300px;
         }
     }
 }

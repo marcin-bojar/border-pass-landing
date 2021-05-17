@@ -10218,21 +10218,41 @@ section.download h2 {
   font-size: 45px;
   margin-top: 0;
 }
-section.download .badges .badge-link {
-  display: block;
-  margin-bottom: 25px;
+section.download .badges .badge-button {
+  color: #992569;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
-section.download .badges .badge-link:last-child {
+section.download .badges .badge-button:last-child {
   margin-bottom: 0;
 }
-section.download .badges .badge-link img {
+section.download .badges .badge-button svg {
   height: 60px;
+  width: 60px;
+}
+section.download .badges .badge-button p {
+  margin: 0;
 }
 @media (min-width: 768px) {
-  section.download .badges .badge-link {
+  section.download .badges .badge-button {
     display: inline-block;
     margin-bottom: 0;
   }
+}
+section.download .instructions {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.3s, opacity 0.3s;
+}
+section.download .instructions.show {
+  visibility: visible;
+  opacity: 1;
+  max-height: 1000px;
+}
+section.download .instructions .device-wrapper {
+  max-width: 250px;
 }
 @media (min-width: 576px) {
   section.download h2 {
@@ -10254,7 +10274,7 @@ section.download .badges .badge-link img {
 }
 
 section.features .section-heading {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 section.features .section-heading h2 {
   margin-top: 0;
@@ -10334,6 +10354,9 @@ header.masthead .device-container {
 header.masthead .device-container .screen img {
   border-radius: 3px;
 }
+header.masthead .device-wrapper {
+  max-width: 275px;
+}
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -10348,7 +10371,7 @@ header.masthead .device-container .screen img {
   header.masthead .header-content h1 {
     font-size: 50px;
   }
-  header.masthead .device-container {
-    max-width: 325px;
+  header.masthead .device-wrapper {
+    max-width: 300px;
   }
 }
