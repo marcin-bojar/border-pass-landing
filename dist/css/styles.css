@@ -10254,6 +10254,12 @@ section.download .instructions.show {
 section.download .instructions .device-wrapper {
   max-width: 250px;
 }
+section.download .instructions .device-wrapper .device .screen {
+  pointer-events: all;
+}
+section.download .instructions .steps {
+  font-size: 18px;
+}
 @media (min-width: 576px) {
   section.download h2 {
     font-size: 50px;

@@ -48,6 +48,14 @@ section.download {
 
         & .device-wrapper {
             max-width: 250px;
+
+            & .device .screen {
+                pointer-events: all;
+            }
+        }
+
+        & .steps {
+            font-size: 18px;
         }
     }
 

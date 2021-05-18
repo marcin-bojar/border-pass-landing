@@ -79,17 +79,46 @@ html(lang='en')
                                     i.fab.fa-apple 
                                     p iOS
                         .instructions#android
-                            .device-wrapper.mx-auto
+                            .device-wrapper.mx-auto.mb-3
                                 .device(data-device='galaxyS5' data-orientation='portrait' data-color='black')
                                     .screen
                                         // PUT CONTENTS HERE
-                                        video#demoVideo.img-fluid(src='../assets/img/fGSyYUyNiG.mp4', autoplay, muted, loop)
+                                        video#demoVideo.img-fluid(src='../assets/img/pwa-android.mp4', controls, muted)
+                            .text-center.mb-5 Kliknij 'Play', żeby zobaczyć filmik
+                            .steps.text-left
+                                span.font-weight-bold 1. 
+                                | Wejdź na https://border-pass.herokuapp.com.
+                                br
+                                span.font-weight-bold 2.
+                                | Na dole ekranu pojawi się pasek z napisem "Dodaj Border-Pass do ekranu głównego". Kliknij go.
+                                br
+                                span.font-weight-bold 3.
+                                | Kliknij 'Dodaj'.
+                                br
+                                span.font-weight-bold 4.
+                                | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
                         .instructions#ios
-                            .device-wrapper.mx-auto
+                            .device-wrapper.mx-auto.mb-3
                                 .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
                                     .screen
                                         // PUT CONTENTS HERE
-                                        video#demoVideo.img-fluid(src='../assets/img/fGSyYUyNiG.mp4', autoplay, muted, loop)
+                                        video#demoVideo.img-fluid(src='../assets/img/pwa-ios.mp4', controls, muted)
+                            .text-center.mb-5 Kliknij 'Play', żeby zobaczyć filmik
+                            .steps.text-left
+                                span.font-weight-bold 1.
+                                | Wejdź na https://border-pass.herokuapp.com
+                                br
+                                span.font-weight-bold 2.
+                                | Kliknij w przycisk 'Share'. 
+                                br
+                                span.font-weight-bold 3.
+                                | Zjedź na dół, aż zobaczysz opcję 'Dodaj do ekranu głównego' i kliknij ją.
+                                br
+                                span.font-weight-bold 4.
+                                | Wybierz nazwę i kliknij 'Dodaj'
+                                br
+                                span.font-weight-bold 5.
+                                | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
 
         section#features.features
             .container
