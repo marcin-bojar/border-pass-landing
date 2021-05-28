@@ -75,11 +75,11 @@
 
     $(".badge-button").on("click", function () {
         if (this.id === "android") {
-            $(".instructions#ios").removeClass("show");
-            $(".instructions#android").toggleClass("show");
+            $("#ios-instructions").removeClass("show");
+            $("#android-instructions").toggleClass("show");
         } else if (this.id === "ios") {
-            $(".instructions#android").removeClass("show");
-            $(".instructions#ios").toggleClass("show");
+            $("#android-instructions").removeClass("show");
+            $("#ios-instructions").toggleClass("show");
         }
         anime({
             targets: "html, body",

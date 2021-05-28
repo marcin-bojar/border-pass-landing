@@ -36,7 +36,7 @@ html(lang='pl-PL')
                 a.navbar-brand.js-scroll-trigger(href='#page-top') Border Pass
                 button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
                     | Menu
-                    img.bars(src='../assets/icons/bars-solid.svg')
+                    img.bars(src='../assets/icons/bars-solid.svg', alt='Menu')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
                         li.nav-item
@@ -74,13 +74,13 @@ html(lang='pl-PL')
                         .badges.col-8.mx-auto.mb-5.d-flex.align-items-center.justify-content-around
                             .col-4.d-flex.flex-column.align-items-center.justify-content-center
                                 button#android.badge-button(type='button')
-                                    img.system(src='../assets/icons/android-brands.svg')
+                                    img.system(src='../assets/icons/android-brands.svg', alt='Android logo')
                                     p Android
                             .col-4.d-flex.flex-column.align-items-center.justify-content-center
                                 button#ios.badge-button(type='button')
-                                    img.system(src='../assets/icons/apple-brands.svg')
+                                    img.system(src='../assets/icons/apple-brands.svg', alt='Apple logo')
                                     p iOS
-                        .instructions#android
+                        .instructions#android-instructions
                             .device-wrapper.mx-auto.mb-3
                                 .device(data-device='galaxyS5' data-orientation='portrait' data-color='black')
                                     .screen
@@ -99,7 +99,7 @@ html(lang='pl-PL')
                                 br
                                 span.font-weight-bold 4.
                                 | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
-                        .instructions#ios
+                        .instructions#ios-instructions
                             .device-wrapper.mx-auto.mb-3
                                 .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
                                     .screen
@@ -183,7 +183,7 @@ html(lang='pl-PL')
                 p.contact-text Koniecznie do nas napisz na#[a.alert-link(href='mailto:kontakt@border-pass.pl') kontakt@border-pass.pl] Odpowiemy na każdą wiadomość.
                 h2
                     | Made with
-                    img(src='../assets/icons/heart-solid.svg')
+                    img(src='../assets/icons/heart-solid.svg', alt='Heart')
                     | in Poland.
 
         footer
