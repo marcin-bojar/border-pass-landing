@@ -10099,6 +10099,9 @@ section h2 {
 #mainNav .navbar-nav > li > a:focus:hover {
   color: white;
 }
+#mainNav .bars {
+  width: 10px;
+}
 
 /*!
  * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
@@ -10173,8 +10176,8 @@ section.contact h2 {
   margin-top: 75px;
   margin-bottom: 0;
 }
-section.contact h2 i {
-  color: #dd4b39;
+section.contact h2 img {
+  height: 50px;
 }
 section.contact .contact-text {
   font-size: 24px;
@@ -10227,7 +10230,7 @@ section.download .badges .badge-button {
 section.download .badges .badge-button:last-child {
   margin-bottom: 0;
 }
-section.download .badges .badge-button svg {
+section.download .badges .badge-button img {
   height: 60px;
   width: 60px;
 }

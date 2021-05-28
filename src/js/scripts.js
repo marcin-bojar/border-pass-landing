@@ -1,6 +1,10 @@
 (function ($) {
     "use strict"; // Start of use strict
 
+    console.log(
+        `Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)`
+    );
+
     // Smooth scrolling using anime.js
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on(
         "click",
@@ -72,5 +76,11 @@
             $(".instructions#android").removeClass("show");
             $(".instructions#ios").toggleClass("show");
         }
+        anime({
+            targets: "html, body",
+            scrollTop: $(this).offset().top - 54,
+            duration: 500,
+            easing: "easeInExpo",
+        });
     });
 })(jQuery); // End of use strict

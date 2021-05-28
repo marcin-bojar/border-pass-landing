@@ -1,25 +1,27 @@
 doctype html
-html(lang='en')
+html(lang='pl-PL')
 
     head
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Rejestruj swoje przekroczenia granic z łatwością. Wysyłaj gotowe zestawienie mailem do firmy.')
+        meta(name='author', content='BITS Marcin Bojar')
+        meta(name='keywords', content='granice, przekroczenia granic, delegacje, delegacja, rozliczenia kierowców, kierowcy, podróże służbowe, podróż służbowa')
 
-        title Border-Pass
+        title Border Pass
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
         link(href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css', rel='stylesheet')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Catamaran:200,400', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
-
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+        link(rel='stylesheet', media='print', onload="this.media='all'", href='https://fonts.googleapis.com/css?family=Catamaran:200,400')
+        link(rel='preload', as='style', href='https://fonts.googleapis.com/css?family=Catamaran:200,400')
+        link(rel='stylesheet', media='print', onload="this.media='all'", href='https://fonts.googleapis.com/css?family=Muli')
+        link(rel='preload', as='style', href='https://fonts.googleapis.com/css?family=Muli')
         // Plugin CSS
         link(href='https://cdnjs.cloudflare.com/ajax/libs/html5-device-mockups/3.2.1/dist/device-mockups.min.css', rel='stylesheet')
 
@@ -31,10 +33,10 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Border-Pass
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Border Pass
                 button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
                     | Menu
-                    i.fas.fa-bars
+                    img.bars(src='../assets/icons/bars-solid.svg')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
                         li.nav-item
@@ -50,7 +52,7 @@ html(lang='en')
                     .col-lg-7.my-auto
                         .header-content.mx-auto
                             h1.mb-5
-                                | Border-Pass 
+                                | Border Pass 
                                 br
                                 | Rejestruj swoje podróże służbowe. Wysyłaj gotowe zestawienia do firmy wprost z telefonu. Proste!
                             a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://border-pass.herokuapp.com') Zacznij używać
@@ -65,18 +67,18 @@ html(lang='en')
             .container
                 .row
                     .col-md-8.mx-auto
-                        h2.section-heading.mb-5 Zainstaluj Border-Pass na swoim urządzeniu!
+                        h2.section-heading.mb-5 Zainstaluj Border Pass na swoim urządzeniu!
                         p Po wejściu na stronę#[a.alert-link(href='https://border-pass.herokuapp.com') https://border-pass.herokuapp.com]  możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą!
                         p Pokażemy Ci jak to zrobić. Jakie masz urządzenie?
                         
                         .badges.col-8.mx-auto.mb-5.d-flex.align-items-center.justify-content-around
                             .col-4.d-flex.flex-column.align-items-center.justify-content-center
                                 button#android.badge-button(type='button')
-                                    i.fab.fa-android 
+                                    img.system(src='../assets/icons/android-brands.svg')
                                     p Android
                             .col-4.d-flex.flex-column.align-items-center.justify-content-center
                                 button#ios.badge-button(type='button')
-                                    i.fab.fa-apple 
+                                    img.system(src='../assets/icons/apple-brands.svg')
                                     p iOS
                         .instructions#android
                             .device-wrapper.mx-auto.mb-3
@@ -178,10 +180,10 @@ html(lang='en')
                 p.font-weight-bold.contact-text.mb-1 Masz jakiekolwiek pytania?
                 p.font-weight-bold.contact-text.mb-1 Znalazłeś jakiś błąd?
                 p.font-weight-bold.contact-text.mb-5 Masz pomysł na udoskonalenie naszej apki?
-                p.contact-text Koniecznie do nas napisz na#[a.alert-link(href='mailto:border.pass.kontakt@gmail.com') border.pass.kontakt@gmail.com] Odpowiemy na każdą wiadomość.
+                p.contact-text Koniecznie do nas napisz na#[a.alert-link(href='mailto:kontakt@border-pass.pl') kontakt@border-pass.pl] Odpowiemy na każdą wiadomość.
                 h2
                     | Made with
-                    i.text-danger.fas.fa-heart
+                    img(src='../assets/icons/heart-solid.svg')
                     | in Poland.
 
         footer
