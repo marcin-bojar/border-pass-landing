@@ -33,7 +33,8 @@ html(lang='pl-PL')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Border Pass
+                a.navbar-brand.js-scroll-trigger(href='#page-top') 
+                    img.logo(src='../assets/icons/logo.svg', alt='Border-Pass Logo')
                 button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
                     | Menu
                     img.bars(src='../assets/icons/bars-solid.svg', alt='Menu')
@@ -52,23 +53,23 @@ html(lang='pl-PL')
                     .col-lg-7.my-auto
                         .header-content.mx-auto
                             h1.mb-5
-                                | Border Pass 
+                                img.logo.mb-5(src='../assets/icons/logo.svg', alt='Border-Pass')
                                 br
                                 | Rejestruj swoje podróże służbowe. Wysyłaj gotowe zestawienia do firmy wprost z telefonu. Proste!
-                            a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://border-pass.herokuapp.com') Zacznij używać
+                            a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://app.border-pass.pl') Zacznij używać
                     .col-lg-5.my-auto
                         .device-wrapper.mx-auto
                             .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
                                 .screen
                                     // PUT CONTENTS HERE
-                                    video#demoVideo.img-fluid(src='../assets/img/fGSyYUyNiG.mp4', autoplay, muted, loop)
+                                    video#demoVideo.img-fluid(src='../assets/videos/hero.mp4', autoplay, muted, loop)
                     
         section#download.download.bg-primary.text-center
             .container
                 .row
                     .col-md-8.mx-auto
-                        h2.section-heading.mb-5 Zainstaluj Border Pass na swoim urządzeniu!
-                        p Po wejściu na stronę#[a.alert-link(href='https://border-pass.herokuapp.com') https://border-pass.herokuapp.com]  możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą!
+                        h1.section-heading.mb-5 Zainstaluj Border Pass na swoim urządzeniu!
+                        p Po wejściu na stronę#[a.alert-link(href='https://app.border-pass.pl') https://app.border-pass.pl]  możesz dodać naszą aplikację do ekranu głównego. Zrób to i ciesz się wygodą!
                         p Pokażemy Ci jak to zrobić. Jakie masz urządzenie?
                         
                         .badges.col-8.mx-auto.mb-5.d-flex.align-items-center.justify-content-around
@@ -80,53 +81,54 @@ html(lang='pl-PL')
                                 button#ios.badge-button(type='button')
                                     img.system(src='../assets/icons/apple-brands.svg', alt='Apple logo')
                                     p iOS
-                        .instructions#android-instructions
-                            .device-wrapper.mx-auto.mb-3
-                                .device(data-device='galaxyS5' data-orientation='portrait' data-color='black')
-                                    .screen
-                                        // PUT CONTENTS HERE
-                                        video#demoVideo.img-fluid(src='../assets/img/pwa-android.mp4', controls, muted)
-                            .text-center.mb-5 Kliknij 'Play', żeby zobaczyć filmik
-                            .steps.text-left
-                                span.font-weight-bold 1. 
-                                | Wejdź na https://border-pass.herokuapp.com.
-                                br
-                                span.font-weight-bold 2.
-                                | Na dole ekranu pojawi się pasek z napisem "Dodaj Border-Pass do ekranu głównego". Kliknij go.
-                                br
-                                span.font-weight-bold 3.
-                                | Kliknij 'Dodaj'.
-                                br
-                                span.font-weight-bold 4.
-                                | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
-                        .instructions#ios-instructions
-                            .device-wrapper.mx-auto.mb-3
-                                .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
-                                    .screen
-                                        // PUT CONTENTS HERE
-                                        video#demoVideo.img-fluid(src='../assets/img/pwa-ios.mp4', controls, muted)
-                            .text-center.mb-5 Kliknij 'Play', żeby zobaczyć filmik
-                            .steps.text-left
-                                span.font-weight-bold 1.
-                                | Wejdź na https://border-pass.herokuapp.com
-                                br
-                                span.font-weight-bold 2.
-                                | Kliknij w przycisk 'Share'. 
-                                br
-                                span.font-weight-bold 3.
-                                | Zjedź na dół, aż zobaczysz opcję 'Dodaj do ekranu głównego' i kliknij ją.
-                                br
-                                span.font-weight-bold 4.
-                                | Wybierz nazwę i kliknij 'Dodaj'
-                                br
-                                span.font-weight-bold 5.
-                                | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
+                        .instructions-container
+                            .instructions#android-instructions
+                                .device-wrapper.mx-auto.mb-3
+                                    .device(data-device='galaxyS5' data-orientation='portrait' data-color='black')
+                                        .screen
+                                            // PUT CONTENTS HERE
+                                            video#demoVideo.img-fluid(src='../assets/videos/pwa-android.mp4', controls, muted)
+                                .text-center.mb-5 Kliknij 'Play', żeby zobaczyć filmik
+                                .steps.text-left
+                                    span.font-weight-bold 1. 
+                                    | Wejdź na #[a.alert-link(href='https://app.border-pass.pl') https://app.border-pass.pl]
+                                    br
+                                    span.font-weight-bold 2.
+                                    | Na dole ekranu pojawi się pasek z napisem "Dodaj Border-Pass do ekranu głównego". Kliknij go.
+                                    br
+                                    span.font-weight-bold 3.
+                                    | Kliknij 'Dodaj'.
+                                    br
+                                    span.font-weight-bold 4.
+                                    | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
+                            .instructions#ios-instructions
+                                .device-wrapper.mx-auto.mb-3
+                                    .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
+                                        .screen
+                                            // PUT CONTENTS HERE
+                                            video#demoVideo.img-fluid(src='../assets/videos/pwa-ios.mp4', controls, muted)
+                                .text-center.mb-5 Kliknij 'Play', żeby zobaczyć filmik
+                                .steps.text-left
+                                    span.font-weight-bold 1.
+                                    | Wejdź na #[a.alert-link(href='https://app.border-pass.pl') https://app.border-pass.pl]
+                                    br
+                                    span.font-weight-bold 2.
+                                    | Kliknij w przycisk 'Share'. 
+                                    br
+                                    span.font-weight-bold 3.
+                                    | Zjedź na dół, aż zobaczysz opcję 'Dodaj do ekranu głównego' i kliknij ją.
+                                    br
+                                    span.font-weight-bold 4.
+                                    | Wybierz nazwę i kliknij 'Dodaj'
+                                    br
+                                    span.font-weight-bold 5.
+                                    | Apka zainstaluje się na Twoim telefonie, a skrót do niej pojawi się na ekranie głównym.
 
         section#features.features
             .container
                 .section-heading.text-center
-                    h2 Co oferuje Border-Pass
-                    p.text-muted Sprawdź, co zyskujesz używając naszej aplikacji
+                    h2 Co oferuje Border Pass
+                    p.text-muted Sprawdź, co zyskujesz, używając naszej aplikacji.
                     hr
                 .row                             
                     .col-lg-12.my-auto
@@ -172,7 +174,7 @@ html(lang='pl-PL')
                         | No to w drogę.
                         br
                         | Szerokości!
-                    a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://border-pass.herokuapp.com') Zacznij używać
+                    a.btn.btn-light.btn-lg.btn-brand.py-3.px-4.rounded-pill.js-scroll-trigger(href='https://app.border-pass.pl') Zacznij używać
             .overlay
 
         section#contact.contact.bg-primary

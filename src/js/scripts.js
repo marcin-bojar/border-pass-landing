@@ -78,7 +78,7 @@
         }
         anime({
             targets: "html, body",
-            scrollTop: $(this).offset().top - 54,
+            scrollTop: $(".instructions-container").offset().top - 65,
             duration: 500,
             easing: "easeInExpo",
         });
